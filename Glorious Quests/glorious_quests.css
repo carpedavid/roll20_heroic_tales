@@ -8,6 +8,7 @@ main {
     display: grid;
     width: 800px;
     height: auto;
+    background: url('https://raw.githubusercontent.com/carpedavid/roll20_heroic_tales/main/Glorious%20Quests/banner.svg') top left / auto 60px no-repeat;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 60px 1fr 1fr 1fr 1fr 1fr 20px;
