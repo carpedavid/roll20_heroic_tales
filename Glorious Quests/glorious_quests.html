@@ -34,7 +34,7 @@
   </section>
 
   <section class="skill f-col">
-    <h1>Attributes</h1>
+    <h1>Traits</h1>
     <div class="f-row nowrap">
       <div class="wrap">
         <input type="number" id="attr_body" name="attr_body" class="numbers" min="1" max="3">
@@ -64,17 +64,44 @@
     </div>
   </section>
 
+  <section class="combat_traits f-col">
+    <h1>Combat Traits</h1>
+    <div class="f-row nowrap">
+      <div class="wrap">
+        <input type="number" id="attr_health" name="attr_health" class="numbers" min="0">
+        <label for="attr_health">Health</label>
+      </div>
+    </div>
+    <div class="f-row nowrap">
+      <div class="wrap">
+        <input type="number" id="attr_combat_speed" name="attr_combat_speed" class="numbers" min="0">
+        <label for="attr_combat_speed">Speed</label>
+      </div>
+    </div>
+    <div class="f-row nowrap">
+      <div class="wrap">
+        <input type="number" id="attr_willpower" name="attr_willpower" class="numbers" min="0">
+        <label for="attr_willpower">Willpower</label>
+      </div>
+    </div>
+  </section>
+
   <section class="power f-col">
-    <h1>Wondrous Items</h1>
+    <h1>Wonders</h1>
     <fieldset class="repeating_item">
       <input id="attr_item" name="attr_item" type="text">
-      <label for="attr_item">Item</label>
+      <label for="attr_item">Wonder</label>
     </fieldset>
   </section>
 
   <section class="desc f-col">
     <label for="attr_desc">Description</label>
     <textarea id="attr_desc" name="attr_desc"></textarea>
+  </section>
+
+  <section class="combat_talents f-col">
+    <label for="attr_combat_talents">Combat Talents</label>
+    <textarea id="attr_combat_talents" name="attr_combat_talents"></textarea>
   </section>
 
   <section class="notes f-col">

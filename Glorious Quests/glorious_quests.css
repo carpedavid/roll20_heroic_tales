@@ -10,15 +10,16 @@ main {
     height: auto;
     background: url('https://raw.githubusercontent.com/carpedavid/roll20_heroic_tales/main/Glorious%20Quests/banner.svg') top left / auto 60px no-repeat;
     grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 60px 1fr 1fr 1fr 1fr 1fr 20px;
-    grid-template-areas:"header header"
-                        "common common"
-                        "skill  power"
-                        "skill  power"
-                        "desc   desc"
-                        "notes   notes"
-                        "footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px 1fr 1fr 1fr 1fr 1fr 1fr 20px;
+    grid-template-areas:"header header  header"
+                        "common common  common"
+                        "skill  combat_traits  power"
+                        "skill  combat_traits  power"
+                        "desc   desc  desc"
+                        "combat_talents combat_talents  combat_talents"  
+                        "notes   notes  notes"
+                        "footer footer  footer";
   }
   
   /*----------------- GENERAL CSS ------------------*/
@@ -140,6 +141,11 @@ main {
     justify-content: space-evenly;
   }
   
+  .combat_traits {
+    grid-area: combat_traits;
+    justify-content: space-evenly;
+  }
+
   .common {
     grid-area: common;
   }
@@ -158,6 +164,10 @@ main {
   
   .desc {
     grid-area: desc;
+  }
+
+  .combat_talents {
+    grid-area: combat_talents;
   }
 
   .notes {
